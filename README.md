@@ -35,6 +35,11 @@ conda install numpy pandas pytorch torchvision torchaudio pytorch-cuda=12.1 -c p
 ## **Data and Variables**
 
 * **Dataset:** `state_level_dengue_climate.csv`
+* **Preprocessing:**
+  The dataset was aggregated at the **state level**:
+
+  * **Dengue cases:** summed across municipalities.
+  * **Climate variables:** computed as **population-weighted averages** using the population of each municipality.
 * **Variables:**
 
   * `uf` (state), `epiweek`, `year`, `casos` (dengue cases)
